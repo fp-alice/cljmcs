@@ -1,0 +1,612 @@
+{:releases
+ ({:version "1.13.2",
+   :file "minecraft_server-1.13.2.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/3737db93722a9e39eeada7c27e7aca28b144ffa7/server.jar"}
+  {:version "1.13.1",
+   :file "minecraft_server-1.13.1.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/fe123682e9cb30031eae351764f653500b7396c9/server.jar"}
+  {:version "1.13",
+   :file "minecraft_server-1.13.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/d0caafb8438ebd206f99930cfaecfa6c9a13dca0/server.jar"}
+  {:version "1.12.2",
+   :file "minecraft_server-1.12.2.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/886945bfb2b978778c3a0288fd7fab09d315b25f/server.jar"}
+  {:version "1.12.1",
+   :file "minecraft_server-1.12.1.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/561c7b2d54bae80cc06b05d950633a9ac95da816/server.jar"}
+  {:version "1.12",
+   :file "minecraft_server-1.12.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/8494e844e911ea0d63878f64da9dcc21f53a3463/server.jar"}
+  {:version "1.11.2",
+   :file "minecraft_server-1.11.2.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/f00c294a1576e03fddcac777c3cf4c7d404c4ba4/server.jar"}
+  {:version "1.11.1",
+   :file "minecraft_server-1.11.1.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/1f97bd101e508d7b52b3d6a7879223b000b5eba0/server.jar"}
+  {:version "1.11",
+   :file "minecraft_server-1.11.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/48820c84cb1ed502cb5b2fe23b8153d5e4fa61c0/server.jar"}
+  {:version "1.10.2",
+   :file "minecraft_server-1.10.2.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/3d501b23df53c548254f5e3f66492d178a48db63/server.jar"}
+  {:version "1.10.1",
+   :file "minecraft_server-1.10.1.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/cb4c6f9f51a845b09a8861cdbe0eea3ff6996dee/server.jar"}
+  {:version "1.10",
+   :file "minecraft_server-1.10.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/a96617ffdf5dabbb718ab11a9a68e50545fc5bee/server.jar"}
+  {:version "1.9.4",
+   :file "minecraft_server-1.9.4.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/edbb7b1758af33d365bf835eb9d13de005b1e274/server.jar"}
+  {:version "1.9.3",
+   :file "minecraft_server-1.9.3.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/8e897b6b6d784f745332644f4d104f7a6e737ccf/server.jar"}
+  {:version "1.9.2",
+   :file "minecraft_server-1.9.2.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/2b95cc7b136017e064c46d04a5825fe4cfa1be30/server.jar"}
+  {:version "1.9.1",
+   :file "minecraft_server-1.9.1.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/bf95d9118d9b4b827f524c878efd275125b56181/server.jar"}
+  {:version "1.9",
+   :file "minecraft_server-1.9.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/b4d449cf2918e0f3bd8aa18954b916a4d1880f0d/server.jar"}
+  {:version "1.8.9",
+   :file "minecraft_server-1.8.9.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/b58b2ceb36e01bcd8dbf49c8fb66c55a9f0676cd/server.jar"}
+  {:version "1.8.8",
+   :file "minecraft_server-1.8.8.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/5fafba3f58c40dc51b5c3ca72a98f62dfdae1db7/server.jar"}
+  {:version "1.8.7",
+   :file "minecraft_server-1.8.7.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/35c59e16d1f3b751cd20b76b9b8a19045de363a9/server.jar"}
+  {:version "1.8.6",
+   :file "minecraft_server-1.8.6.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/2bd44b53198f143fb278f8bec3a505dad0beacd2/server.jar"}
+  {:version "1.8.5",
+   :file "minecraft_server-1.8.5.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/ea6dd23658b167dbc0877015d1072cac21ab6eee/server.jar"}
+  {:version "1.8.4",
+   :file "minecraft_server-1.8.4.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/dd4b5eba1c79500390e0b0f45162fa70d38f8a3d/server.jar"}
+  {:version "1.8.3",
+   :file "minecraft_server-1.8.3.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/163ba351cb86f6390450bb2a67fafeb92b6c0f2f/server.jar"}
+  {:version "1.8.2",
+   :file "minecraft_server-1.8.2.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/a37bdd5210137354ed1bfe3dac0a5b77fe08fe2e/server.jar"}
+  {:version "1.8.1",
+   :file "minecraft_server-1.8.1.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/68bfb524888f7c0ab939025e07e5de08843dac0f/server.jar"}
+  {:version "1.8",
+   :file "minecraft_server-1.8.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/a028f00e678ee5c6aef0e29656dca091b5df11c7/server.jar"}
+  {:version "1.7.10",
+   :file "minecraft_server-1.7.10.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/952438ac4e01b4d115c5fc38f891710c4941df29/server.jar"}
+  {:version "1.7.9",
+   :file "minecraft_server-1.7.9.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/4cec86a928ec171fdc0c6b40de2de102f21601b5/server.jar"}
+  {:version "1.7.8",
+   :file "minecraft_server-1.7.8.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/c69ebfb84c2577661770371c4accdd5f87b8b21d/server.jar"}
+  {:version "1.7.7",
+   :file "minecraft_server-1.7.7.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/a6ffc1624da980986c6cc12a1ddc79ab1b025c62/server.jar"}
+  {:version "1.7.6",
+   :file "minecraft_server-1.7.6.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/41ea7757d4d7f74b95fc1ac20f919a8e521e910c/server.jar"}
+  {:version "1.7.5",
+   :file "minecraft_server-1.7.5.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/e1d557b2e31ea881404e41b05ec15c810415e060/server.jar"}
+  {:version "1.7.4",
+   :file "minecraft_server-1.7.4.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/61220311cef80aecc4cd8afecd5f18ca6b9461ff/server.jar"}
+  {:version "1.7.3",
+   :file "minecraft_server-1.7.3.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/707857a7bc7bf54fe60d557cca71004c34aa07bb/server.jar"}
+  {:version "1.7.2",
+   :file "minecraft_server-1.7.2.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/3716cac82982e7c2eb09f83028b555e9ea606002/server.jar"}
+  {:version "1.6.4",
+   :file "minecraft_server-1.6.4.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/050f93c1f3fe9e2052398f7bd6aca10c63d64a87/server.jar"}
+  {:version "1.6.2",
+   :file "minecraft_server-1.6.2.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/01b6ea555c6978e6713e2a2dfd7fe19b1449ca54/server.jar"}
+  {:version "1.6.1",
+   :file "minecraft_server-1.6.1.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/0252918a5f9d47e3c6eb1dfec02134d1374a89b4/server.jar"}
+  {:version "1.5.2",
+   :file "minecraft_server-1.5.2.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/f9ae3f651319151ce99a0bfad6b34fa16eb6775f/server.jar"}
+  {:version "1.5.1",
+   :file "minecraft_server-1.5.1.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/d07c71ee2767dabb79fb32dad8162e1b854d5324/server.jar"}
+  {:version "1.4.7",
+   :file "minecraft_server-1.4.7.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/2f0ec8efddd2f2c674c77be9ddb370b727dec676/server.jar"}
+  {:version "1.4.6",
+   :file "minecraft_server-1.4.6.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/a0aeb5709af5f2c3058c1cf0dc6b110a7a61278c/server.jar"}
+  {:version "1.4.5",
+   :file "minecraft_server-1.4.5.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/c12fd88a8233d2c517dbc8196ba2ae855f4d36ea/server.jar"}
+  {:version "1.4.4",
+   :file "minecraft_server-1.4.4.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/4215dcadb706508bf9d6d64209a0080b9cee9e71/server.jar"}
+  {:version "1.4.2",
+   :file "minecraft_server-1.4.2.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/5be700523a729bb78ef99206fb480a63dcd09825/server.jar"}
+  {:version "1.3.2",
+   :file "minecraft_server-1.3.2.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/3de2ae6c488135596e073a9589842800c9f53bfe/server.jar"}
+  {:version "1.3.1",
+   :file "minecraft_server-1.3.1.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/82563ce498bfc1fc8a2cb5bf236f7da86a390646/server.jar"}
+  {:version "1.2.5",
+   :file "minecraft_server-1.2.5.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/d8321edc9470e56b8ad5c67bbd16beba25843336/server.jar"}
+  {:version "1.2.4",
+   :file "minecraft_server-1.2.4.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/d8321edc9470e56b8ad5c67bbd16beba25843336/server.jar"}
+  {:version "1.2.3",
+   :file "minecraft_server-1.2.3.jar",
+   :location "http://assets.minecraft.net/1_2/minecraft_server.jar"}
+  {:version "1.2.2",
+   :file "minecraft_server-1.2.2.jar",
+   :location "http://assets.minecraft.net/1_2/minecraft_server.jar"}
+  {:version "1.2.1",
+   :file "minecraft_server-1.2.1.jar",
+   :location "http://assets.minecraft.net/1_2/minecraft_server.jar"}),
+ :snapshots
+ ({:version "19w08b",
+   :file "minecraft_server-19w08b.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/045006b74b84a8e04e0e6e0c89c8069c9476938f/server.jar"}
+  {:version "19w08a",
+   :file "minecraft_server-19w08a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/f337f8dfb765f152388d5038a6e0e8830782e5ed/server.jar"}
+  {:version "19w07a",
+   :file "minecraft_server-19w07a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/d370db01d591576477c3efc940a42926f43bc98f/server.jar"}
+  {:version "19w06a",
+   :file "minecraft_server-19w06a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/20c069d373e77265aaeeedb733f7051e294325a3/server.jar"}
+  {:version "19w05a",
+   :file "minecraft_server-19w05a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/521021450baf9b9b98b0a6d0cb60e97f306f4f57/server.jar"}
+  {:version "19w04b",
+   :file "minecraft_server-19w04b.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/7a5a3bbefcb4d27fd9ac30736eee06ae1e2c0991/server.jar"}
+  {:version "19w04a",
+   :file "minecraft_server-19w04a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/261edfd76c32c9f675c12264b6fa03f670c3325c/server.jar"}
+  {:version "19w03c",
+   :file "minecraft_server-19w03c.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/e9fdb18631fc4ff23b06b1e827fb653ac20532fe/server.jar"}
+  {:version "19w03b",
+   :file "minecraft_server-19w03b.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/a3a358a7566debb17c5332fbc43eb8b84e000997/server.jar"}
+  {:version "19w03a",
+   :file "minecraft_server-19w03a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/1e80738a5360887bc93a46bdffb07699a45bf5a1/server.jar"}
+  {:version "19w02a",
+   :file "minecraft_server-19w02a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/f8078dd487483a917645f7a5561290e28bd875c4/server.jar"}
+  {:version "18w50a",
+   :file "minecraft_server-18w50a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/de0577900a9071758d7f1172dd283bdbe88b7431/server.jar"}
+  {:version "18w49a",
+   :file "minecraft_server-18w49a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/5b6eb767f6708d351e3d1009a44115bb033b854f/server.jar"}
+  {:version "18w48b",
+   :file "minecraft_server-18w48b.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/cfa41132beeb877a093e044aba591d9dae236c38/server.jar"}
+  {:version "18w48a",
+   :file "minecraft_server-18w48a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/f0f04983d197388b05a4647f7a7cf8b5fbbac5d3/server.jar"}
+  {:version "18w47b",
+   :file "minecraft_server-18w47b.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/fa9d22eea98b62f6663f1aa8a25840e0993485e6/server.jar"}
+  {:version "18w47a",
+   :file "minecraft_server-18w47a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/7066873e9b86cfcd5b66c6a98d2587d95bf94adc/server.jar"}
+  {:version "18w46a",
+   :file "minecraft_server-18w46a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/6681e24d2dc9ba60a6e7d1fbbf25b2af70ff9d1c/server.jar"}
+  {:version "18w45a",
+   :file "minecraft_server-18w45a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/a004069d93ebfd9a6d93c57b66becac29f876d4c/server.jar"}
+  {:version "18w44a",
+   :file "minecraft_server-18w44a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/e70221701d85ad9ed8be35e042f4c8e52fb627ec/server.jar"}
+  {:version "18w43c",
+   :file "minecraft_server-18w43c.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/b2dc0522b0802cbb8e81d1afd3e46be8819d3c1d/server.jar"}
+  {:version "18w43b",
+   :file "minecraft_server-18w43b.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/ed443be5ff6a304164612c545f0942fd99d53e13/server.jar"}
+  {:version "18w43a",
+   :file "minecraft_server-18w43a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/08ca3aaa7ff61d4ae06d5d63476724a1f32cb6b0/server.jar"}
+  {:version "1.13.2-pre2",
+   :file "minecraft_server-1.13.2-pre2.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/2f39df32f20196b5a6acad117f7d6b404b069c58/server.jar"}
+  {:version "1.13.2-pre1",
+   :file "minecraft_server-1.13.2-pre1.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/744df5d6872645a8f919459473e0e02a3571e6bb/server.jar"}
+  {:version "1.13.1-pre2",
+   :file "minecraft_server-1.13.1-pre2.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/c2a4bcf3e244c46f13c39e31e7ef6030564fb6c2/server.jar"}
+  {:version "1.13.1-pre1",
+   :file "minecraft_server-1.13.1-pre1.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/988fec4e71e5fa1fc29a50230de05a11973d62ab/server.jar"}
+  {:version "18w33a",
+   :file "minecraft_server-18w33a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/e62f0a29e4ab5963488330f29c03ca2914b5b22b/server.jar"}
+  {:version "18w32a",
+   :file "minecraft_server-18w32a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/d36429ccdcaa73cb37b366d608024e3a6a5a20ab/server.jar"}
+  {:version "18w31a",
+   :file "minecraft_server-18w31a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/4646084899fb62a7b9afa6f453fae4e6e786e5a5/server.jar"}
+  {:version "18w30b",
+   :file "minecraft_server-18w30b.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/373b2fb24db8ed21d25483a986e9eb7f945c5277/server.jar"}
+  {:version "18w30a",
+   :file "minecraft_server-18w30a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/4cfe675115064caad14712c3345660f4069a2e8b/server.jar"}
+  {:version "1.13-pre10",
+   :file "minecraft_server-1.13-pre10.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/2ffcae7a9489d515b0f733430923ef974dffd56b/server.jar"}
+  {:version "1.13-pre9",
+   :file "minecraft_server-1.13-pre9.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/ee66f5cb1247f4340734a151db4f940bbe04f833/server.jar"}
+  {:version "1.13-pre8",
+   :file "minecraft_server-1.13-pre8.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/b04f82ae0f3018c4c22a153184b385012c4d0814/server.jar"}
+  {:version "1.13-pre7",
+   :file "minecraft_server-1.13-pre7.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/6cd8348fadedaa1de5851f449b995c835bb569eb/server.jar"}
+  {:version "1.13-pre6",
+   :file "minecraft_server-1.13-pre6.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/71a2f9a760f0cbcf09d1eae60eebe1ccbb7ea1db/server.jar"}
+  {:version "1.13-pre5",
+   :file "minecraft_server-1.13-pre5.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/6d9ede222df5726059aba1b01f99c328bc16f1a5/server.jar"}
+  {:version "1.13-pre4",
+   :file "minecraft_server-1.13-pre4.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/d57007a8722ed645319666fc56b27690054d8363/server.jar"}
+  {:version "1.13-pre3",
+   :file "minecraft_server-1.13-pre3.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/5406f31cb5274ae48938851de697b32976ecb499/server.jar"}
+  {:version "1.13-pre2",
+   :file "minecraft_server-1.13-pre2.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/5b312060d457a1f75846afd3935ec3f140da3942/server.jar"}
+  {:version "1.13-pre1",
+   :file "minecraft_server-1.13-pre1.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/e031e58e1d9e745877404530d39775bf9ffa9a56/server.jar"}
+  {:version "18w22c",
+   :file "minecraft_server-18w22c.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/d66173b86e26e6835e36c63eb2828652186a4698/server.jar"}
+  {:version "18w22b",
+   :file "minecraft_server-18w22b.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/cc0b6a96e537528cdaab685c4eaeeaf8ed905b51/server.jar"}
+  {:version "18w22a",
+   :file "minecraft_server-18w22a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/077225ee7bca03f521ed8df86fa4740b8e7a3cad/server.jar"}
+  {:version "18w21b",
+   :file "minecraft_server-18w21b.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/df8cc7cfa4c2d24f31f5997a102f1d6411f038d0/server.jar"}
+  {:version "18w21a",
+   :file "minecraft_server-18w21a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/2022a23da58dc55371b6a182fb1ba59742dc66a2/server.jar"}
+  {:version "18w20c",
+   :file "minecraft_server-18w20c.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/9e0ffb265e3771dc5c7b56f291b9c9d8f668f48b/server.jar"}
+  {:version "18w20b",
+   :file "minecraft_server-18w20b.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/35304e17de5fbe503b10bad50192d14a38e5cec0/server.jar"}
+  {:version "18w20a",
+   :file "minecraft_server-18w20a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/108a051216637e0145f6b0e66182b48736595fc3/server.jar"}
+  {:version "18w19b",
+   :file "minecraft_server-18w19b.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/87edb914af0594016fab77eaaa9d25c7f1f1d132/server.jar"}
+  {:version "18w19a",
+   :file "minecraft_server-18w19a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/97ad982d57fb7b7cb9dc28ffd87c79538b1901f6/server.jar"}
+  {:version "18w16a",
+   :file "minecraft_server-18w16a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/87ca53126694ff105edf65d8206a4529fbadd0a3/server.jar"}
+  {:version "18w15a",
+   :file "minecraft_server-18w15a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/3f9534ab77a524593db7a20196e41ae36b23d69d/server.jar"}
+  {:version "18w14b",
+   :file "minecraft_server-18w14b.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/85d6445fc4596e6b69fb00f0d3e5462dfeeb933c/server.jar"}
+  {:version "18w14a",
+   :file "minecraft_server-18w14a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/50b4ca8fe7853ae6757a163a80e67cb8437fb082/server.jar"}
+  {:version "18w11a",
+   :file "minecraft_server-18w11a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/4286b7cbc4709c8f61c93a77b42c70918376cac3/server.jar"}
+  {:version "18w10d",
+   :file "minecraft_server-18w10d.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/28727c7dfb62c56ac48153ab9a25d42115f85f94/server.jar"}
+  {:version "18w10c",
+   :file "minecraft_server-18w10c.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/7c2494311ab74f97623ebf6e2d5beba625a9d5fc/server.jar"}
+  {:version "18w10b",
+   :file "minecraft_server-18w10b.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/b45d7194b91327c8fd2c1d0d5a738b80c9600562/server.jar"}
+  {:version "18w10a",
+   :file "minecraft_server-18w10a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/7bb1cfb4560d2e99551b22a631b6087d43817a45/server.jar"}
+  {:version "18w09a",
+   :file "minecraft_server-18w09a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/57dd2fe4a2fdb6e846b978e77442465d2ea27f43/server.jar"}
+  {:version "18w08b",
+   :file "minecraft_server-18w08b.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/cdfdcdd799087d9b66f04667f0717a11e28c29cc/server.jar"}
+  {:version "18w08a",
+   :file "minecraft_server-18w08a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/09b2bc558d86878ce69f303ddbd62bf4489db068/server.jar"}
+  {:version "18w07c",
+   :file "minecraft_server-18w07c.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/52e141870c3c850811710f2ba07eb3e7e583ea92/server.jar"}
+  {:version "18w07b",
+   :file "minecraft_server-18w07b.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/669811c0df3fedef8a15f1b31c96df966b9aee79/server.jar"}
+  {:version "18w07a",
+   :file "minecraft_server-18w07a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/e90255faadbb7f009fa38a507f62f751dcc56c9b/server.jar"}
+  {:version "18w06a",
+   :file "minecraft_server-18w06a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/4e47158fd42d966884a7ffb7440b35d86c038049/server.jar"}
+  {:version "18w05a",
+   :file "minecraft_server-18w05a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/a4029c808cef57bed3228a51dcb7f68edd018a77/server.jar"}
+  {:version "18w03b",
+   :file "minecraft_server-18w03b.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/ef8c70a7c9b88c02c64ea01d050614929b7152f6/server.jar"}
+  {:version "18w03a",
+   :file "minecraft_server-18w03a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/713a291a4da5cad056964c1fcda8c888e154eb73/server.jar"}
+  {:version "18w02a",
+   :file "minecraft_server-18w02a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/950b737e9cefc9f91f286190166f062d6b0e0105/server.jar"}
+  {:version "18w01a",
+   :file "minecraft_server-18w01a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/47a8d2bb4db5b5e3db6b7837c9f0fa17ea660448/server.jar"}
+  {:version "17w50a",
+   :file "minecraft_server-17w50a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/670c67a4dfbd1070a9be629124ddd8aac8d9b9d9/server.jar"}
+  {:version "17w49b",
+   :file "minecraft_server-17w49b.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/caac50590085014355070ea6381baec0f58aa9f2/server.jar"}
+  {:version "17w49a",
+   :file "minecraft_server-17w49a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/561fe37463ef30b4e1ab4c6b1da057d9e2b17801/server.jar"}
+  {:version "17w48a",
+   :file "minecraft_server-17w48a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/e132a348243b824ba6f74569c8b1080b77104981/server.jar"}
+  {:version "17w47b",
+   :file "minecraft_server-17w47b.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/9b4e7894906f0b379c7300cff0b3e68a4b9db662/server.jar"}
+  {:version "17w47a",
+   :file "minecraft_server-17w47a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/0cec7f11d7bf9c36464b1815e5bbcb0afe6db019/server.jar"}
+  {:version "17w46a",
+   :file "minecraft_server-17w46a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/9127416e2341eb8fb7b63636c3ae39efefb2843b/server.jar"}
+  {:version "17w45b",
+   :file "minecraft_server-17w45b.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/eec0c6c49b1066b648f39e1dcef8c76510a794dc/server.jar"}
+  {:version "17w45a",
+   :file "minecraft_server-17w45a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/471b2dfa12e4df234057159ce5ee8320da3c84c1/server.jar"}
+  {:version "17w43b",
+   :file "minecraft_server-17w43b.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/0447782ac5280f8f981c3998609928984213a4c7/server.jar"}
+  {:version "17w43a",
+   :file "minecraft_server-17w43a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/6f6869d527140e5531e655bda10911efb65425bb/server.jar"}
+  {:version "1.12.2-pre2",
+   :file "minecraft_server-1.12.2-pre2.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/641adfb6a646fe12f1fb2715ed4e3167c7ff2f2b/server.jar"}
+  {:version "1.12.2-pre1",
+   :file "minecraft_server-1.12.2-pre1.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/b81c81335e68731d66ccddc21df0c06d7b9b46ab/server.jar"}
+  {:version "1.12.1-pre1",
+   :file "minecraft_server-1.12.1-pre1.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/b25c39f4658911169e184f00a24798f6463ded14/server.jar"}
+  {:version "17w31a",
+   :file "minecraft_server-17w31a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/00b83b98c91dbe3531342325f72654ef6d7be6eb/server.jar"}
+  {:version "1.12-pre7",
+   :file "minecraft_server-1.12-pre7.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/a8d79598161edc5f67b606120ea9e62bcefcaaa7/server.jar"}
+  {:version "1.12-pre6",
+   :file "minecraft_server-1.12-pre6.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/9bc0e57debc61da93c0ea0d97849254db4f4e556/server.jar"}
+  {:version "1.12-pre5",
+   :file "minecraft_server-1.12-pre5.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/40e76b2836c92cd9e05af61bb64046c8650c088d/server.jar"}
+  {:version "1.12-pre4",
+   :file "minecraft_server-1.12-pre4.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/588bcccfff42acc2cb6f7c6470cd6bc8ba393668/server.jar"}
+  {:version "1.12-pre3",
+   :file "minecraft_server-1.12-pre3.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/c985b2083848efcc8d1658d6cda5644681035f80/server.jar"}
+  {:version "1.12-pre2",
+   :file "minecraft_server-1.12-pre2.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/e5fd1c4202f9b0855d9104b66ba4182d52e79c38/server.jar"}
+  {:version "1.12-pre1",
+   :file "minecraft_server-1.12-pre1.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/ebcafa3e1a3312500893087bf4bfb6c6f335ef0e/server.jar"}
+  {:version "17w18b",
+   :file "minecraft_server-17w18b.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/915c1833209d588ade3e064577700037093861da/server.jar"}
+  {:version "17w18a",
+   :file "minecraft_server-17w18a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/b1f45946bd74f4e2cf1833324770809ebcd0b7b1/server.jar"}
+  {:version "17w17b",
+   :file "minecraft_server-17w17b.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/7cf669824e4c8340050adcc2125f1ec4cb84feac/server.jar"}
+  {:version "17w17a",
+   :file "minecraft_server-17w17a.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/3795d253cfef44f1f1467422b4399d1770484dc0/server.jar"}
+  {:version "17w16b",
+   :file "minecraft_server-17w16b.jar",
+   :location
+   "https://launcher.mojang.com/v1/objects/80601961e590046727791d6b18f51d840ea86e1c/server.jar"}
+  ...)}
