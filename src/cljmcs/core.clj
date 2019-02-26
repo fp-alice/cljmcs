@@ -1,40 +1,36 @@
 (ns cljmcs.core
   (:gen-class)
-  (:require [cljmcs.http.scraper :as scraper]))
+  (:require [cljmcs.minecraft.servers :as servers]
+            [clojure.tools.cli :refer [parse-opts]]
+            [clojure.string :as string]
+            [clojure.tools.cli :as cli]
+            [cljmcs.commands.download :as download]))
+
+(def cli-options
+  [["-h" "--help"]] )
+
+(defn usage
+  []
+  (->> ["cljmcs: The clojure minecraft server tool"
+        ""
+        "Usage: cljmcs <action> [args] [options]"
+        ""
+        "Actions:"
+        "  download [release/snapshot, version]    Downloads minecraft server jar & creates run script"
+        "  run                                     Runs script in current directory"
+        "  list     [release/snapshot]             Lists all releases or snapshots"
+        ""]
+       (string/join \newline)))
 
 (defn -main
   "I don't do a whole lot ... yet."
   [& args]
-  (println "Hello, World!"))
+  (let  [{:keys [arguments options] :as opts} (cli/parse-opts args cli-options)
+         [action & arguments] arguments]
+    (when (:help options)
+      (println (usage)))
+    (when action
+      (case action
+        "download" (download/download! arguments)))
+    (clojure.pprint/pprint opts)))
 
-(defn get-jars-for
-  [release-type]
-  (let [jars-map (scraper/get-server-maps)
-        jars (case release-type
-               "release" (:releases jars-map)
-               "snapshot" (:snapshots jars-map)
-               nil)]
-    jars))
-
-(defn get-release-version
-  [jars minecraft-version]
-  (let [jar-with-version (fn [{:keys [version]
-                              :as release}]
-                           (when (= version minecraft-version)
-                             release))]
-    (some jar-with-version jars)))
-
-(defn get-jar-with
-  [release-type minecraft-version]
-  (let [jars (get-jars-for release-type)]
-    (if (nil? jars)
-      {:error (str "invalid release type \"" release-type "\" [expected release/snapshot]")}
-      (let [selected-version (get-release-version jars minecraft-version)]
-        (if (nil? selected-version)
-          {:error (str "no such version: " minecraft-version)}
-          {:ok selected-version})))))
-
-(defn list-versions
-  [release-type]
-  (let [jars (get-jars-for release-type)]
-    (map :version jars)))
