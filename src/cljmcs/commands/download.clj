@@ -5,11 +5,16 @@
             [clojure.core.match :refer [match]]))
 
 (defn download!
+  "Attempts downloading a server jar & creating a run script with provided arguments"
   [[group version]]
+  (println "Attempting to download Minecraft server:" group version)
   (let [result (servers/get-server-jar group version)]
     (match result
       [:error error] (println "Error:" error)
       [:ok selected-jar] (do
+                           (println "Downloading...")
                            (downloader/download-jar! selected-jar)
-                           (files/write-run-script! (:file selected-jar))))))
+                           (println "Writing default run script to run.sh...")
+                           (files/write-run-script! (:file selected-jar))
+                           (println "Done")))))
 
