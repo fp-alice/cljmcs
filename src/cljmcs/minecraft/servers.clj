@@ -27,10 +27,10 @@
   [group minecraft-version]
   (let [jars (get-jars-in-group group)]
     (if (nil? jars)
-      [:error (str "invalid release type \"" group "\" [expected release/snapshot]")]
+      [:error (str "No such group \"" group "\" [expected release/snapshot]")]
       (let [selected-version (get-release-version jars minecraft-version)]
         (if (nil? selected-version)
-          [:error (str "no such version: " minecraft-version)]
+          [:error (str "No such version: " minecraft-version)]
           [:ok selected-version])))))
 
 (defn list-versions-in-group

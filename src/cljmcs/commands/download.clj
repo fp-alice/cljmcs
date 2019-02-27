@@ -9,6 +9,8 @@
   [[group version]]
   (println "Attempting to download Minecraft server:" group version)
   (let [result (servers/get-server-jar group version)]
+    ;; I don't know if this is a good or bad way to deal with errors to be honest, I was feeling some Elixir inspiration here
+    ;; This might be dumb, idk
     (match result
       [:error error] (println "Error:" error)
       [:ok selected-jar] (do
