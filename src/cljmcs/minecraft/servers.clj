@@ -1,5 +1,6 @@
 (ns cljmcs.minecraft.servers
-  (:require [cljmcs.http.scraper :as scraper]))
+  (:require [cljmcs.http.scraper :as scraper]
+            [cljmcs.commands.errors :as errors]))
 
 (defn get-jars-in-group
   "Used to select either all release jars or all snapshot jars.
@@ -27,14 +28,16 @@
   [group minecraft-version]
   (let [jars (get-jars-in-group group)]
     (if (nil? jars)
-      [:error (str "No such group \"" group "\" [expected release/snapshot]")]
+      [:error (errors/group group)]
       (let [selected-version (get-release-version jars minecraft-version)]
         (if (nil? selected-version)
-          [:error (str "No such version: " minecraft-version)]
+          [:error (errors/version minecraft-version)]
           [:ok selected-version])))))
 
 (defn list-versions-in-group
   "Used to list all of the versions in a release group. (release or snapshot)"
   [group]
-  (if-some [jars (get-jars-in-group group)]
-    (map :version jars)))
+  (let [jars (get-jars-in-group group)]
+    (if (nil? jars)
+      [:error (errors/group group)]
+      [:ok (map :version jars)])))

@@ -8,7 +8,3 @@
   (-> (sh "pwd")
       :out
       string/trim))
-
-(defn start-run-script!
-  []
-  (sh "run.sh"))

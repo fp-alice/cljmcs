@@ -1,11 +1,12 @@
 (ns cljmcs.commands.list
-  (:require [cljmcs.minecraft.servers :as servers]))
-
+  (:require [cljmcs.minecraft.servers :as servers]
+            [clojure.core.match :refer [match]]))
 
 (defn list!
   "Lists all available minecraft versions, release or snapshot"
   [group]
-  (if-some [versions (servers/list-versions-in-group group)]
-    (doseq [version versions]
-      (println version))
-    (println (str "Error: No such group \"" group "\" [expected release/snapshot]"))))
+  (let [versions (servers/list-versions-in-group group)]
+    (match versions
+      [:error error] (println "Error:" error)
+      [:ok coll] (doseq [version versions]
+                   (println version)))))
